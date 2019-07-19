@@ -1,0 +1,3690 @@
+*
+{
+  box-sizing:border-box;
+ 
+}
+
+body
+{
+    padding:0;
+    margin:0;
+    background:#121619;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+section , div
+{
+    overflow: hidden;
+}
+
+/*Start of Loader Section*/
+
+.loading-overlay
+{
+    background:rgb(24, 24, 24);
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: 99999;
+}
+
+.spinner 
+{
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+    
+    top:30%;
+  }
+  
+.spinner > div
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15%;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+  
+  .spinner .rect2 
+  {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 
+  {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 
+  {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 
+  {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+
+
+/*End of Loader Section*/
+
+
+/*Start of header section*/
+.navbar
+{
+    padding:20px;
+    transition:0.66s;
+    background:rgb(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.navbar button
+{
+    background:none;
+    color:white
+}
+.navbar.effect
+{
+    background:#0d1013;
+    padding:5px;
+    transition:0.6s;
+    border-bottom:1px solid #0a0c0e;
+    margin:0%;
+    border-radius:0px;
+}
+.navbar-brand>img
+{
+    display: block;
+}
+.navbar-brand img
+{
+    max-width:100%;
+    height:auto;
+}
+.navbar .nav-item .nav-link
+{
+    color:white;
+    font-size:20px;
+    font-weight: lighter;
+    transition:0.5S;
+    position: relative;
+}
+.navbar .nav-item .nav-link:hover
+{
+    color:#fcbe43; 
+}
+.nav-link::before , .nav-link::after
+{
+    background:rgb(255, 255, 255);
+    transform:scaleX(0);
+    width:100%;
+    content:'';
+    position: absolute;
+    height:1.6px;
+    transition: 0.5s;
+    left:0;
+}
+.nav-link::before,.nav-link::after
+{
+    bottom:0;
+    transform-origin: center;
+}
+
+.nav-link:hover::before,.nav-link:hover::after
+{
+    transform: scaleX(1)
+}
+header .carousel-inner .active
+{
+    background-image:url(../Images/Backgrounds/back-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+header .carousel-inner .second
+{
+    background-image:url(../Images/Backgrounds/back-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:100vh
+}
+header .carousel-inner .third
+{
+    background-image:url(../Images/Backgrounds/back-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:100vh
+}
+header .carousel-inner .active .carousel-caption
+{
+    margin-bottom:15%;
+}
+header .carousel-inner .second .carousel-caption
+{
+    margin-bottom:15%;
+    margin-left:33%;
+} 
+header .carousel-inner .third .carousel-caption
+{
+    margin-bottom:15%;
+    margin-right:33%;
+}
+header .carousel-caption
+{
+    font-family: 'Lobster', cursive;
+}
+header .carousel-caption .active-h1
+{
+    font-size:75px;
+    margin-bottom:3%;
+    opacity:0;
+    transform:translatex(15rem);
+    animation: slidein 2.5s forwards
+}
+header .carousel-caption .active-h2
+{
+    opacity:0;
+    transform:translatex(-15rem);
+    animation: slidein 2.5s forwards;
+    font-size:50px;
+}
+header .carousel-caption .active-btn
+{
+    font-size:18px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:1.5px solid #fcbe43;
+    background:#fcbe43;
+    color:#121619;
+    text-decoration: none;
+    border-radius:25px;
+    transition:0.5s; 
+    opacity:0;
+    animation: slidein 4s forwards; 
+}
+header .carousel-caption .active-btn:hover
+{
+    border:1.5px solid white;
+    color:white;
+    background:none;
+    border-radius:25px
+}
+header .carousel-caption .second-h1
+{
+    font-size:40px;
+    margin-bottom:8%;
+    opacity:0;
+    transform:translatey(15rem);
+    animation: slidein 2.5s forwards
+}
+header .carousel-caption .second-h2
+{
+    font-size:75px;
+    opacity:0;
+    transform:translatey(-15rem);
+    animation: slidein 2.5s forwards
+}
+header .carousel-caption .second-btn
+{
+    font-size:18px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:1.5px solid #fcbe43;
+    background:#fcbe43;
+    color:#121619;
+    text-decoration: none;
+    border-radius:25px;
+    transition:0.5s;
+    opacity:0;
+    animation: slidein 4s forwards; 
+}
+header .carousel-caption .second-btn:hover
+{
+    border:1.5px solid white;
+    color:white;
+    background:none;
+}
+header .carousel-caption .third-h1
+{
+    font-size:40px;
+    margin-bottom:5%;
+    opacity:0;
+    transform:translatey(15rem);
+    animation: slidein 2.5s forwards
+}
+header .carousel-caption .third-h2
+{
+    font-size:75px;
+    opacity:0;
+    transform:translatey(-15rem);
+    animation: slidein 2.5s forwards
+}
+header .carousel-caption .third-btn
+{
+    font-size:18px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:1.5px solid #fcbe43;
+    background:#fcbe43;
+    color:#121619;
+    text-decoration: none;
+    border-radius:25px;
+    transition:0.5s;
+    opacity:0;
+    animation: slidein 4s forwards; 
+}
+header .carousel-caption .third-btn:hover
+{
+    border:1.5px solid white;
+    color:white;
+    background:none;
+}
+header .carousel-control-prev , .carousel-control-next
+{
+    font-size:30px;
+    opacity:0.1%;
+}
+/*End of header section*/
+
+
+/*Start of About Us section*/
+.About-Us
+{
+  padding-top:130px;
+  padding-bottom:60px;
+  margin-top:5%;
+}
+.About-Us h1
+{
+    color:white;
+    padding:5px;
+    font-size:55px
+}
+.About-Us .Border
+{
+    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    border:none;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:2%;
+}
+.About-Us .carousel
+{
+    background:white url(../Images/backgrounds/back-4.jpg);
+    padding:20px;
+    width:100%;
+    background-position:center;
+    background-size:cover;
+    border:1px solid rgb(24, 24, 24);
+    border-radius:30px;
+    margin-right:20%;
+  
+}
+.About-Us .carousel-item img
+{
+    max-width:40%;
+    margin-left:3.5%;
+    margin-top:10.5%;
+}
+.About-Us .content
+{
+    padding:20px;
+    text-align: left;
+}
+.About-Us .content h2
+{
+    font-size:40px;
+    color:White;
+    padding:10px;
+}
+.About-Us .content p
+{
+    font-size:15px;
+    color:rgb(163, 163, 163);
+    padding:10px;
+}
+
+.About-Us .content a
+{
+    margin-bottom:10%;
+    font-size:17px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:1.5px solid #fcbe43;
+    background:#fcbe43;
+    color:#1c2227;
+    text-decoration: none;
+    border-radius:25px;
+    transition:0.5s;
+}
+.About-Us .content a:hover
+{
+    color:white;
+    border:1.5px solid white;
+    background:none;
+}
+.About-Us #content1
+{
+    transition-delay:100ms;
+}
+.About-Us #carouselExampleInterval
+{
+    transition-delay: 450ms;
+}
+
+/*End of About Us section*/
+
+
+/*Start of Services section*/
+.Services
+{
+    text-align: center;
+    padding-top:130px;
+    padding-bottom:70px;
+    background-image:url(../Images/Backgrounds/back-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+    margin-top:5%;
+}
+.Services h1
+{
+    color:#121619;
+    padding:5px;
+    font-size:55px
+}
+.Services .Border
+{
+    background:url(../Images/border/border-2.png) no-repeat scroll center center / contain;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:2%;
+}
+.Services .content
+{
+    padding:30px;
+    background:#14191d;
+    margin:12%;
+    border-radius:10px;
+    transition:0.5s; 
+}
+.Services .content:hover
+{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+.Services .content h2
+{
+    color:white;
+    font-size:30px;
+}
+.Services .content p
+{
+    color:rgb(170, 170, 170);
+    font-size:15px;
+}
+.Services .content img
+{
+    height:auto;
+    max-width:40%;
+    margin:8%;
+    background:#14191d;
+    border:2px solid rgb(255, 255, 255);
+    padding:4px;
+    border-radius:40px;
+}
+.Services #content1
+{
+    transition-delay: 100ms;
+}
+.Services #content2
+{
+    transition-delay: 450ms;
+}
+.Services #content3
+{
+    transition-delay: 750ms;
+}
+/*End of Services section*/
+
+
+
+/*Start of Menu section*/
+
+.Menu
+{
+    padding-top:130px;
+    padding-bottom:70px;
+    margin-top:5%;
+}
+.Menu h1
+{
+    color:white;
+    padding:5px;
+    font-size:55px
+}
+.Menu .Border
+{
+    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    border:none;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:2%;
+}
+.Menu .content
+{
+    padding:30px;
+    background:#0c1013;
+    margin:8%;
+    border-radius:10px;
+    transition:0.5s;
+}
+.Menu .content:hover
+{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.9); 
+}
+.Menu .content h2
+{
+    font-size:40px;
+    color:rgb(43, 43, 43);
+    margin:5%;
+    border-radius:10px;
+    background:#fcbe43
+}
+.Menu .content2
+{
+  margin:3%;
+  margin-bottom:-5%;
+  padding-top:20px;
+  border-bottom:1px solid rgb(71, 71, 71);
+}
+
+.Menu .content2 .p1
+{
+    text-align: left;
+    font-size:20px;
+    color:rgb(255, 255, 255)
+}
+.Menu .content2 .p2
+{
+    text-align: left;
+    font-size:14px;
+    color:rgb(170, 170, 170);
+    margin-top:-8%
+}
+.Menu .content2 .p1 span
+{
+    float:right;
+    font-size:18px;
+    color:#fcbe43;
+}
+.Menu .last-content2
+{
+    margin:3%;
+    margin-bottom:-5%;
+    padding-top:20px;
+    border-bottom:none;
+}
+.Menu .last-content2 .p1
+{
+    text-align: left;
+    font-size:20px;
+    color:rgb(255, 255, 255);
+}
+.Menu .last-content2 .p2
+{
+    text-align: left;
+    font-size:14px;
+    color:rgb(170, 170, 170);
+    margin-top:-8%
+}
+.Menu .last-content2 .p1 span
+{
+    float:right;
+    font-size:18px;
+    color:#fcbe43;
+}
+.Menu .content img
+{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+    width:100%;
+    margin-top:10%;
+    padding:5px;
+    border:1px solid rgb(24, 24, 24);
+    background:rgb(26, 26, 26);
+    border-radius:10px;
+    border-top:1px solid rgb(161, 161, 161);
+}
+.Menu .content3 .btn 
+{
+    font-size:17px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:2.5px;
+    padding-bottom:2.5px;
+    border:1.5px solid #fcbe43;
+    background:#fcbe43;
+    color:#1c2227;
+    text-decoration: none;
+    border-radius:25px;
+    transition:0.5s;
+}
+.Menu .content3 .btn:hover
+{
+    color:white;
+    border:1.5px solid white;
+    background:none;
+}
+.Menu .content3
+{
+    margin:2%;
+}
+.Menu #content1
+{
+    transition-delay: 100ms;
+}
+.Menu #content2
+{
+    transition-delay: 450ms;
+}
+.Menu #content3
+{
+    transition-delay: 750ms;
+}
+.Menu #content4
+{
+    transition-delay: 100ms;
+}
+.Menu #content5
+{
+    transition-delay: 450ms;
+}
+.Menu #content6
+{
+    transition-delay: 750ms;
+}
+.Menu #content7
+{
+    transition-delay: 100ms;
+}
+.Menu #content8
+{
+    transition-delay: 450ms;
+}
+.Menu #content9
+{
+    transition-delay: 750ms;
+}
+/*End of Menu section*/
+
+
+
+/*Start of Offers section*/
+.Offers
+{
+    padding-top:120px;
+    padding-bottom:70px;
+    margin-top:5%;
+    background:#0c1013;
+}
+.Offers .control
+{
+    margin-top:4%;
+    
+}
+.Offers h1
+{
+    color:white;
+    padding:5px;
+    font-size:55px
+}
+.Offers .Border
+{
+    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    border:none;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:2%;
+}
+.Offers .Image
+{
+    border-radius:30px;
+    box-sizing: border-box;
+    background:url(../Images/backgrounds/back-6.jpg) no-repeat top center;
+    background-size: cover;
+    height:100%;
+}
+.Offers .carousel .carousel-inner .carousel-item 
+{
+   height: 450px;
+}
+.Offers .carousel-caption h2
+{
+    font-size:55px;
+    padding:5px;
+    border-bottom:1px solid rgb(71, 71, 71);
+}
+.Offers .carousel-caption .Price
+{
+    margin-bottom:3%;
+}
+.Offers .carousel-caption .Price span
+{
+    color:#fcbe43;
+    padding:15px;
+    font-size:20px;
+    background:#0a0c0e;
+    border-radius:50px;
+}
+.Offers .carousel-caption
+{
+    margin-bottom:10%;
+}
+.Offers .carousel-caption p
+{
+    font-size:16px;
+    color:rgb(170, 170, 170)
+}
+.Offers .carousel-caption .btn
+{
+    font-size:17px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:2.5px;
+    padding-bottom:2.5px;
+    border:1.5px solid #fcbe43;
+    background:#fcbe43;
+    color:#1c2227;
+    text-decoration: none;
+    border-radius:25px;
+    transition:0.5s;
+}
+.Offers .carousel-caption .btn:hover
+{
+    color:white;
+    border:1.5px solid white;
+    background:none;
+}
+.Offers #content1
+{
+    transition-delay: 100ms;
+}
+.Offers #carouselExampleControls
+{
+    transition-delay: 450ms;
+}
+
+
+/*End of Offers section*/
+
+
+/*Start of Client Review section*/
+.Review
+{
+    padding-top:120px;
+    padding-bottom:50px;
+    margin-top:5%;
+}
+.Review h1
+{
+    color:white;
+    padding:5px;
+    font-size:55px
+}
+.Review .Border
+{
+    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    border:none;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:2%;
+}
+.Review .content
+{
+    padding:30px;
+    margin:0 15%;
+}
+.Review .carousel-inner .carousel-item
+{
+    height: 450px;
+    margin-top:5%;
+}
+.Review .carousel-caption
+{
+    background:#121619;
+    padding:15px; 
+    margin-bottom:3%;
+}
+
+.Review .carousel-caption .stars
+{
+    display: block;
+    margin:2%;
+    font-size:15px;
+    color:#fcb932
+}
+
+.Review .carousel-caption .stars .fas
+{
+    margin:0.3%;
+}
+
+.Review .content .carousel-caption img
+{
+    width:18%;
+    padding:4px;
+    border-radius:50%;
+    height:18%;
+    margin-bottom:2%;
+    background:#0a0c0e;
+    border-top: 1.5px solid rgb(97, 97, 97)
+}
+.Review .content .carousel-caption h4
+{
+    margin-bottom:10%;
+}
+.Review .carousel-caption p
+{
+    font-size:15px;
+    color:rgb(170, 170, 170);
+    font-style: italic
+}
+.Review .carousel-caption p span
+{
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fcbe43;
+    margin:0.5%;
+    line-height:0%  
+}
+
+/*End of Client Review section*/
+
+/*Start of Team Section*/
+.Team
+{
+    padding-top:120px;
+    padding-bottom:50px;
+    margin-top:5%;
+}
+.Team h1
+{
+    color:white;
+    padding:5px;
+    font-size:55px
+}
+.Team .Border
+{
+    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    border:none;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:2%;
+}
+
+.Team .content img
+{
+    width:80%;
+    border-radius:50%;
+    padding:5px;
+    background:#0b0d0f;
+}
+.Team .content
+{
+    padding:10px;
+    margin-top:15%;
+    transition:0.9s;
+}
+.Team .content h3
+{
+    color:white;
+    font-size:29px;
+    margin-top:5%;
+}
+.Team .content h4
+{ 
+    margin-top:-0.1%;
+    font-size:20px;
+    color:rgb(173, 173, 173);
+}
+.Team .content p
+{
+    color:rgb(114, 114, 114);
+    font-size:14px;
+}
+
+.Team .content a
+{
+    color:#ffb727;
+    font-size:12px;
+    width:10%;
+    max-width:10%;
+    padding:7px;
+    border-radius: 48%;
+    margin-bottom:3%;
+    transition: 0.5s;
+}
+.Team .content a:hover
+{
+    color:rgb(255, 255, 255);
+}
+.Team .content:hover
+{
+    border-radius:5%;
+    background-color:#fcb932;
+    transform: translatey(-2rem)
+}
+.Team .content:hover img
+{
+    background:#2b2b2b;
+    border-top:1.5px solid #424242;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+}
+.Team .content:hover h3
+{
+   color:#1f1f1f
+}
+.Team .content:hover h4
+{
+   color:#3b3b3b
+}
+.Team .content:hover p
+{
+   color:#4b4b4b
+}
+.Team .content:hover a
+{
+    background:rgb(43, 43, 43);
+    color:rgb(255, 255, 255);
+    border:1px solid rgb(43, 43, 43);
+    font-size:12px;
+    width:10%;
+}
+.Team .content:hover a:hover
+{
+    color:rgb(43, 43, 43);
+    background:none;
+    transform: rotate(360deg)
+}
+.Team #content1
+{
+    transition-delay: 100ms;
+}
+.Team #content2
+{
+    transition-delay: 450ms;
+}
+.Team #content3
+{
+    transition-delay: 750ms;
+}
+/*End of Team Section*/
+
+
+/*Start of Gallery Section*/
+
+.Gallery
+{
+    padding-top:120px;
+    padding-bottom:50px;
+    margin-top:5%;
+    background:#0c1013;
+}
+.Gallery h1
+{
+    color:white;
+    padding:5px;
+    font-size:55px
+}
+.Gallery .Border
+{
+    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    border:none;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:4%;
+}
+.Gallery .content
+{
+    position:relative;
+    cursor: pointer;
+    margin:8%;
+    border:none
+}
+.Gallery .content:before
+{
+    content: " ";
+    box-shadow:0px 5px 5px 0px rgb(0,0,0,0.3);
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right:1px;
+    margin-top:1px;
+    border-style: solid;
+    border-width: 0 90px 90px 0;
+    border-color:rgb(223, 223, 223) #0c1013;
+    transition:all ease 0.9s;
+}
+.Gallery .content:hover:before
+{
+    border-width: 0px;
+}
+.Gallery .content img
+{
+    width:100%;
+    max-width:100%;
+    border-radius:2px;
+    display: block;
+    margin-left:-0.1%;
+    background:white;
+    padding:5px;
+    border:1px solid #0c1013;
+    transition:0.5s;
+}
+.Gallery .content .Hover-content
+{
+    width:100%;
+    max-width:100%;
+    height:0%;
+    background:rgb(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 2px;
+    transition:0.9s all ease;
+    margin-left:-0.1%;
+}
+.Gallery .content .Hover-content a
+{
+    color:rgb(226, 226, 226);
+    font-weight: bold;
+    background:rgb(0,0,0,0.3);
+    padding:10px;
+    border-radius:50%;
+    font-size:15px;
+}
+.Gallery .content:hover .Hover-content
+{
+    height:100%;
+}
+.Gallery #content1
+{
+    transition-delay: 100ms;
+}
+.Gallery #content2
+{
+    transition-delay: 450ms;
+}
+.Gallery #content3
+{
+    transition-delay: 750ms;
+}
+.Gallery #content4
+{
+    transition-delay: 100ms;
+}
+.Gallery #content5
+{
+    transition-delay: 450ms;
+}
+.Gallery #content6
+{
+    transition-delay: 750ms;
+}
+.Gallery #content7
+{
+    transition-delay: 100ms;
+}
+.Gallery #content8
+{
+    transition-delay: 450ms;
+}
+.Gallery #content9
+{
+    transition-delay: 750ms;
+}
+/*End of Gallery Section*/
+
+
+/*Start of Form Section*/
+.Form
+{
+    padding-top:150px;
+    padding-bottom:40px;
+    margin-top:15%;
+}
+.Booking-form
+{
+    margin-left:35%;
+    margin-right:35%;
+    padding:50px;
+    margin-top:-2%;
+    background:#0c1013;
+    border-radius:2%;
+}
+.Booking-form h1
+{
+    color:white;
+    padding:5px;
+    font-size:55px
+}
+.Booking-form .Border
+{
+    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    border:none;
+    content:"";
+    height:22px;
+    width: 100%;  
+    margin-bottom:20%;
+}
+.Booking-form ::placeholder
+{
+    font-size:18px;
+    color:rgb(156, 156, 156);
+}
+.Booking-form .btn
+{
+    background:#ffb727;
+    color:#1f1f1f;
+    font-size:25px;
+    border:1.5px solid #ffb727;
+    transition:0.5s;
+}
+.Booking-form .btn:hover
+{
+    background:none;
+    color:white;
+    border:1.5px solid white;
+}
+.Booking-form select option
+{
+    font-size:50x;
+}
+/*End of Form Section*/
+
+
+/*Start of Footer section*/
+.Footer
+{
+   
+   display :block;
+   padding-top:150px;
+   padding-bottom:150px;
+   background:#0c1013;
+   margin-top:8%;
+}
+.Footer h1
+{
+    font-size: 30px;
+    color:rgb(167, 167, 167);
+}
+.Footer a , .Footer p
+{
+    color:rgb(138, 138, 138);
+    margin-bottom:2%;
+}
+.Footer .btn
+{
+    background:rgb(255, 255, 255);
+    color:rgb(43, 43, 43);
+    border:1px solid rgb(224, 224, 224);
+    font-size:12px;
+    width:10%;
+    max-width:3%;
+    font-weight: lighter;
+    padding:7px;
+    border-radius: 48%;
+    margin-bottom:3%;
+    transition: 0.5s;
+}
+.Footer .btn:hover
+{
+    background:none;
+    border:1px solid white;
+    color:rgb(255, 255, 255);
+    transform: rotate(360deg)
+}
+.Footer .Image
+{
+    margin:2.5%;
+}
+
+/*End of Footer section*/
+
+
+
+
+/*Start of Keyframes*/
+
+@keyframes slidein
+{
+    from
+    {
+      
+    }
+    to
+    {
+    opacity: 1;
+    transform: translatex(0)
+    }
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
+/*End of Keyframes*/
+
+
+/*start of media query*/
+@media only screen and (min-width : 200px) and (max-width : 320px) 
+{
+  
+   
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:50%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:50px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:33px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:15px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:50%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:50%;
+    }
+    #About-Us
+    {
+        transition-delay: 0ms !important;
+    }
+    .About-Us h1
+    {
+        font-size:45px
+    }
+    .About-Us .Border
+    {
+        height:18px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:30px
+    }
+    .About-Us .content p
+    {
+        font-size:15px
+    }
+    .About-Us #content1
+    {
+        
+        margin:0 -5%;
+        text-align: center;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:15px;
+    }
+    .About-Us .carousel-item img
+    {
+        max-width:42%;
+        margin-left:4%;
+        margin-top:10%;
+    }
+    .About-Us .carousel
+    {
+        transition-delay:450ms;
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:10%;
+    }
+    .Services h1
+    {
+        font-size:45px
+    }
+    .Services .Border
+    {
+        height:18px;
+        width: 100%;  
+        margin-bottom:20%;
+    }
+    .Services .content h2
+    {
+        font-size:25px
+    }
+    .Services .content p
+    {
+        font-size:13px
+    }
+    .Services .content img
+    {   
+        max-width:55%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:45px
+    }
+    .Menu .Border
+    {
+        height:18px;
+        width: 100%;  
+        margin-bottom:20%;
+    }
+    .Menu .content h2
+    {
+        font-size:35px
+    }
+    .Menu .content2 .p1
+    {
+        font-size:18px
+    }
+    .Menu .content2 .p2
+    {
+        font-size:13px
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:18px
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:13px
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:15px;
+    }
+    .Offers h1
+    {
+        font-size:45px
+    }
+    .Offers .Border
+    {
+        height:18px;
+        margin-bottom:20%;
+    }
+    .Offers .Image 
+    {
+        min-height:30vh;
+        border-radius:10%;
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20px;
+    }
+    .Offers .control .content .carousel-caption
+    {
+        text-align: center !important ;
+        margin-left:0%;
+        margin:0 -14%;
+        margin-bottom:20%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:3%;
+    }
+    .Review h1
+    {
+        font-size:45px
+    }
+    .Review .Border
+    {
+        height:18px;
+    }
+    .Review .content
+    {
+        margin:0 -31%;
+    }
+    .Review .carousel-inner .carousel-item
+    {
+        min-height:40px;
+        margin-top:0%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -10%;
+        margin-bottom:5%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:40%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:30px;
+       
+    }
+    .Review .carousel-indicators li
+    {
+        margin:3%;
+    }
+    .Team h1
+    {
+        font-size:45px
+    }
+    .Team .Border
+    {
+        height:18px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:27px; 
+    }
+    .Team .content h4
+    { 
+        font-size:18px;
+    }
+    .Team .content p
+    {
+        font-size:13px;
+    }
+    .Team .content:hover a
+    {
+        width:20%;
+        max-width:20%;
+    }
+    .Gallery h1
+    {
+        font-size:45px
+    }
+    .Gallery .Border
+    {
+        height:18px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:-5%;
+        margin-right:-5%;
+    }
+    .Booking-form h1
+    {
+        font-size:45px
+    }
+    .Booking-form .Border
+    {
+        height:18px;
+        margin-bottom:15%;
+    }
+    .Footer .btn
+    {
+        width:18.5%;
+        max-width:15.5%;
+    }
+    .About-Us #content1 , .About-Us #carouselExampleInterval , .Services #content1 , .Services #content2 , .Services #content3 , .Menu #content1 , .Menu #content2 , .Menu #content3 ,.Menu #content4 , .Menu #content5 , .Menu #content6 , .Menu #content7 , .Menu #content8 , .Menu #content9 , .Offers #content1 , .Offers  #carouselExampleControls , .Team #content1 , .Team #content2 , .Team #content3 , .Gallery #content1 , .Gallery #content2 , .Gallery #content3 , .Gallery #content4 , .Gallery #content5 , .Gallery #content6 , .Gallery #content7 , .Gallery #content8 , .Gallery #content9  
+    {
+        transition-delay:0ms;
+    }
+}
+@media only screen and (min-width : 320px) and (max-width : 481px)  /*--- Mobile portrait ---*/
+ {
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:45%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:50px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:33px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:15px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:45%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:45%;
+    }
+    .About-Us h1
+    {
+        font-size:45px
+    }
+    .About-Us .Border
+    {
+        height:18px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:30px
+    }
+    .About-Us .content p
+    {
+        font-size:15px
+    }
+    .About-Us .content
+    {
+        margin:0 -5%;
+        text-align: center;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:15px;
+    }
+    .About-Us .carousel-item img
+    {
+        max-width:42%;
+        margin-left:4%;
+        margin-top:10%;
+    }
+    .About-Us .carousel
+    {
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:10%;
+    }
+    .Services h1
+    {
+        font-size:45px
+    }
+    .Services .Border
+    {
+        height:18px;
+        width: 100%;  
+        margin-bottom:20%;
+    }
+    .Services .content h2
+    {
+        font-size:25px
+    }
+    .Services .content p
+    {
+        font-size:13px
+    }
+    .Services .content img
+    {   
+        max-width:40%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:45px
+    }
+    .Menu .Border
+    {
+        height:18px;
+        width: 100%;  
+        margin-bottom:20%;
+    }
+    .Menu .content h2
+    {
+        font-size:35px;
+    }
+    .Menu .content2 .p1
+    {
+        font-size:18px;
+        margin:1%
+    }
+    .Menu .content2 .p2
+    {
+        font-size:13px;
+        margin:1%
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:18px;
+        margin:1%
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:13px;
+        margin:1%
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:15px;
+    }
+    .Offers h1
+    {
+        font-size:45px
+    }
+    .Offers .Border
+    {
+        height:18px;
+        margin-bottom:20%;
+    }
+    .Offers .Image 
+    {
+        min-height:30vh;
+        border-radius:5%;
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20vh;
+    }
+    .Offers .control .content .carousel-caption
+    {
+        text-align: center !important ;
+        margin:0 -14%;
+        margin-bottom:20%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:3%;
+    }
+    .Review h1
+    {
+        font-size:45px
+    }
+    .Review .Border
+    {
+        height:18px;
+    }
+    .Review .content
+    {
+        margin:0 -18%;
+    }
+    .Review .carousel-inner .carousel-item
+    {
+        min-height:20px;
+        margin-top:2%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -13%;
+        margin-bottom:0%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:40%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:30px;
+       
+    }
+    .Review .carousel-indicators li
+    {
+        margin:3%;
+    }
+    .Team h1
+    {
+        font-size:45px
+    }
+    .Team .Border
+    {
+        height:18px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:27px; 
+    }
+    .Team .content h4
+    { 
+        font-size:18px;
+    }
+    .Team .content p
+    {
+        font-size:13px;
+    }
+    .Team .content:hover a
+    { 
+        width:12%;
+        max-width:12%;
+    }
+    .Gallery h1
+    {
+        font-size:45px
+    }
+    .Gallery .Border
+    {
+        height:18px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:-5%;
+        margin-right:-5%;
+    }
+    .Booking-form h1
+    {
+        font-size:45px
+    }
+    .Booking-form .Border
+    {
+        height:18px;
+        margin-bottom:15%;
+    }
+    .Footer .btn
+    {
+        width:10%;
+        max-width:10%;
+    }
+    .About-Us #content1 , .About-Us #carouselExampleInterval , .Services #content1 , .Services #content2 , .Services #content3 , .Menu #content1 , .Menu #content2 , .Menu #content3 ,.Menu #content4 , .Menu #content5 , .Menu #content6 , .Menu #content7 , .Menu #content8 , .Menu #content9 , .Offers #content1 , .Offers  #carouselExampleControls , .Team #content1 , .Team #content2 , .Team #content3 , .Gallery #content1 , .Gallery #content2 , .Gallery #content3 , .Gallery #content4 , .Gallery #content5 , .Gallery #content6 , .Gallery #content7 , .Gallery #content8 , .Gallery #content9  
+    {
+        transition-delay:0ms;
+    }
+
+ }
+@media only screen and (min-width : 481px) and (max-width : 595px) /*--- Mobile landscape ---*/
+ {
+   
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:35%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:50px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:33px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:15px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:35%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:35%;
+    }
+    .About-Us h1
+    {
+        font-size:55px
+    }
+    .About-Us .Border
+    {
+        height:20px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:40px
+    }
+    .About-Us .content p
+    {
+        font-size:15px
+    }
+    .About-Us .content
+    {
+        margin:0 -5%;
+        text-align: center;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:17px;
+    }
+    .About-Us .carousel-item img
+    {
+        max-width:42%;
+        margin-left:4%;
+        margin-top:10%;
+    }
+    .About-Us .carousel
+    {
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:10%;
+    }
+    .Services h1
+    {
+        font-size:55px
+    }
+    .Services .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Services .content h2
+    {
+        font-size:30px
+    }
+    .Services .content p
+    {
+        font-size:15px
+    }
+    .Services .content img
+    {   
+        max-width:35%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:55px
+    }
+    .Menu .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Menu .content h2
+    {
+        font-size:35px;
+    }
+    .Menu .content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:17px;
+    }
+    .Offers h1
+    {
+        font-size:55px
+    }
+    .Offers .Border
+    {
+        height:20px;
+        margin-bottom:10%;
+    }
+    .Offers .Image 
+    {
+        min-height:45vh;
+        border-radius:5%;
+       
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20vh;
+    }
+    .Offers .carousel-inner .carousel-item .btn
+    {
+        font-size:17px
+    }
+    .Offers .control .content .carousel-caption
+    {
+        text-align: center !important ;
+        margin:0 -14%;
+        margin-bottom:15%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:2%;
+    }
+    .Review h1
+    {
+        font-size:55px
+    }
+    .Review .Border
+    {
+        height:20px;
+    }
+    .Review .content
+    {
+        margin:0 -18%;
+    }
+    .Review .carousel-inner .carousel-item
+    {
+    
+        margin-top:10%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -10%;
+        margin-bottom:0%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:40%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:20px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:30px;
+       
+    }
+    .Review .carousel-indicators li
+    {
+        margin:3%;
+    }
+    .Team h1
+    {
+        font-size:55px
+    }
+    .Team .Border
+    {
+        height:20px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:38px; 
+    }
+    .Team .content h4
+    { 
+        font-size:25px;
+    }
+    .Team .content p
+    {
+        font-size:17px;
+    }
+    .Team .content:hover a
+    { 
+        font-size:15px;
+        width:10%;
+        max-width:10%;
+    }
+    .Gallery h1
+    {
+        font-size:55px
+    }
+    .Gallery .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form h1
+    {
+        font-size:55px
+    }
+    .Booking-form .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:-5%;
+        margin-right:-5%;
+    }
+   
+    .Footer .btn
+    {
+        width:8%;
+        max-width:8%;
+    }
+
+    .About-Us #content1 , .About-Us #carouselExampleInterval , .Services #content1 , .Services #content2 , .Services #content3 , .Menu #content1 , .Menu #content2 , .Menu #content3 ,.Menu #content4 , .Menu #content5 , .Menu #content6 , .Menu #content7 , .Menu #content8 , .Menu #content9 , .Offers #content1 , .Offers  #carouselExampleControls , .Team #content1 , .Team #content2 , .Team #content3 , .Gallery #content1 , .Gallery #content2 , .Gallery #content3 , .Gallery #content4 , .Gallery #content5 , .Gallery #content6 , .Gallery #content7 , .Gallery #content8 , .Gallery #content9  
+    {
+        transition-delay:0ms;
+    }
+
+ }
+@media only screen and (min-width : 595px) and (max-width : 690px) /*--- Small tablet portrait ---*/
+ {
+   
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:35%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:50px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:33px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:15px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:35%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:35%;
+    }
+    .About-Us h1
+    {
+        font-size:55px
+    }
+    .About-Us .Border
+    {
+        height:20px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:40px
+    }
+    .About-Us .content p
+    {
+        font-size:17px
+    }
+    .About-Us .content
+    {
+        margin:0 -5%;
+        text-align: center;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:17px;
+    }
+    .About-Us .carousel-item img
+    {
+        max-width:42%;
+        margin-left:4%;
+        margin-top:10%;
+    }
+    .About-Us .carousel
+    {
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:10%;
+    }
+    .Services h1
+    {
+        font-size:55px
+    }
+    .Services .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Services .content h2
+    {
+        font-size:30px
+    }
+    .Services .content p
+    {
+        font-size:15px
+    }
+    .Services .content img
+    {   
+        max-width:35%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:55px
+    }
+    .Menu .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Menu .content h2
+    {
+        font-size:35px;
+    }
+    .Menu .content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:17px;
+    }
+    .Offers h1
+    {
+        font-size:55px
+    }
+    .Offers .Border
+    {
+        height:20px;
+        margin-bottom:10%;
+    }
+    .Offers .Image 
+    {
+        min-height:45vh;
+        border-radius:5%;
+       
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20vh;
+    }
+    .Offers .carousel-inner .carousel-item .btn
+    {
+        font-size:17px
+    }
+    .Offers .control .content .carousel-caption
+    {
+        text-align: center !important ;
+        margin:0 -14%;
+        margin-bottom:15%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:2%;
+    }
+    .Review h1
+    {
+        font-size:55px
+    }
+    .Review .Border
+    {
+        height:20px;
+    }
+    .Review .content
+    {
+        margin:0 -18%;
+    }
+    .Review .carousel-inner .carousel-item
+    {
+    
+        margin-top:15%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -8%;
+        margin-bottom:0%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:40%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:20px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:30px;
+       
+    }
+    .Review .carousel-indicators li
+    {
+        margin:3%;
+    }
+    .Team h1
+    {
+        font-size:55px
+    }
+    .Team .Border
+    {
+        height:20px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:38px; 
+    }
+    .Team .content h4
+    { 
+        font-size:35px;
+    }
+    .Team .content p
+    {
+        font-size:17px;
+    }
+    .Team .content:hover a
+    { 
+        font-size:18px;
+        width:10%;
+        max-width:10%;
+    }
+    .Gallery h1
+    {
+        font-size:55px
+    }
+    .Gallery .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form h1
+    {
+        font-size:55px
+    }
+    .Booking-form .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:-5%;
+        margin-right:-5%;
+    }
+   
+    .Footer .btn
+    {
+        width:6.5%;
+        max-width:6.5%;
+    }
+    .About-Us #content1 , .About-Us #carouselExampleInterval , .Services #content1 , .Services #content2 , .Services #content3 , .Menu #content1 , .Menu #content2 , .Menu #content3 ,.Menu #content4 , .Menu #content5 , .Menu #content6 , .Menu #content7 , .Menu #content8 , .Menu #content9 , .Offers #content1 , .Offers  #carouselExampleControls , .Team #content1 , .Team #content2 , .Team #content3 , .Gallery #content1 , .Gallery #content2 , .Gallery #content3 , .Gallery #content4 , .Gallery #content5 , .Gallery #content6 , .Gallery #content7 , .Gallery #content8 , .Gallery #content9  
+    {
+        transition-delay:0ms;
+    }
+
+ }
+ 
+@media only screen and (min-width : 690px) and (max-width : 768px) /*--- Tablet portrait ---*/
+ {
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:35%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:70px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:45px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:20px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:35%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:35%;
+    }
+    .About-Us h1
+    {
+        font-size:55px
+    }
+    .About-Us .Border
+    {
+        height:20px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:40px
+    }
+    .About-Us .content p
+    {
+        font-size:17px
+    }
+    .About-Us .content
+    {
+        margin:0 -5%;
+        text-align: center;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:17px;
+    }
+    .About-Us .carousel-item img
+    {
+        max-width:42%;
+        margin-left:4%;
+        margin-top:10%;
+    }
+    .About-Us .carousel
+    {
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:10%;
+    }
+    .Services h1
+    {
+        font-size:55px
+    }
+    .Services .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Services .content h2
+    {
+        font-size:30px
+    }
+    .Services .content p
+    {
+        font-size:15px
+    }
+    .Services .content img
+    {   
+        max-width:35%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:55px
+    }
+    .Menu .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Menu .content h2
+    {
+        font-size:35px;
+    }
+    .Menu .content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:17px;
+    }
+    .Offers h1
+    {
+        font-size:55px
+    }
+    .Offers .Border
+    {
+        height:20px;
+        margin-bottom:10%;
+    }
+    .Offers .Image 
+    {
+        min-height:45vh;
+        border-radius:5%;
+       
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20vh;
+    }
+    .Offers .carousel-inner .carousel-item .btn
+    {
+        font-size:17px
+    }
+    .Offers .control .content .carousel-caption
+    {
+        text-align: center !important ;
+        margin:0 -14%;
+        margin-bottom:15%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:2%;
+    }
+    .Review h1
+    {
+        font-size:55px
+    }
+    .Review .Border
+    {
+        height:20px;
+    }
+    .Review .content
+    {
+        margin:0 -18%;
+    }
+    .Review .carousel-inner .carousel-item
+    {
+    
+        margin-top:15%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -8%;
+        margin-bottom:0%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:40%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:20px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:30px;
+       
+    }
+    .Review .carousel-indicators li
+    {
+        margin:3%;
+    }
+    .Team h1
+    {
+        font-size:55px
+    }
+    .Team .Border
+    {
+        height:20px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:38px; 
+    }
+    .Team .content h4
+    { 
+        font-size:35px;
+    }
+    .Team .content p
+    {
+        font-size:17px;
+    }
+    .Team .content:hover a
+    { 
+        font-size:15px;
+        margin-top:-3%;
+        width:7.5%;
+        max-width:7.5%;
+    }
+    .Gallery h1
+    {
+        font-size:55px
+    }
+    .Gallery .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form h1
+    {
+        font-size:55px
+    }
+    .Booking-form .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:-5%;
+        margin-right:-5%;
+    }
+   
+    .Footer .btn
+    {
+        width:7%;
+        max-width:7%;
+    }
+    .About-Us #content1 , .About-Us #carouselExampleInterval , .Services #content1 , .Services #content2 , .Services #content3 , .Menu #content1 , .Menu #content2 , .Menu #content3 ,.Menu #content4 , .Menu #content5 , .Menu #content6 , .Menu #content7 , .Menu #content8 , .Menu #content9 , .Offers #content1 , .Offers  #carouselExampleControls , .Team #content1 , .Team #content2 , .Team #content3 , .Gallery #content1 , .Gallery #content2 , .Gallery #content3 , .Gallery #content4 , .Gallery #content5 , .Gallery #content6 , .Gallery #content7 , .Gallery #content8 , .Gallery #content9  
+    {
+        transition-delay:0ms;
+    }
+ }
+@media only screen and (min-width : 768px) and (max-width : 995px) /*--- Small tablet landscape ---*/
+ {
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:25%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:70px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:45px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:20px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:25%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:25%;
+    }
+    .About-Us h1
+    {
+        font-size:55px
+    }
+    .About-Us .Border
+    {
+        height:20px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:45px
+    }
+    .About-Us .content p
+    {
+        font-size:15px
+    }
+    .About-Us .content
+    {
+        text-align: left;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:15px;
+    }
+    .About-Us .carousel-item img
+    {
+        width:40%;
+        margin-left:4%;
+        margin-top:10%;;
+    
+    }
+    .About-Us .carousel
+    {
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:40%;
+      width:100%;
+    }
+    .Services h1
+    {
+        font-size:55px
+    }
+    .Services .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Services .content
+    {
+        padding:30px;
+        margin:0%;
+      
+    }
+    .Services .content h2
+    {
+        font-size:20px
+    }
+    .Services .content p
+    {
+        font-size:13px
+    }
+    .Services .content img
+    {   
+        max-width:60%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:55px
+    }
+    .Menu .Border
+    {
+        height:20px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Menu .content
+    {
+        padding:20px;
+        margin:2%;
+        margin-bottom:20%
+    }
+    .Menu .content h2
+    {
+        font-size:28px;
+        
+    }
+    .Menu .content2 .p1
+    {
+        font-size:15px;
+        margin:1%
+    }
+    .Menu .content2 .p2
+    {
+        font-size:13px;
+        margin:1%
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:15px;
+        margin:1%
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:13px;
+        margin:1%
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:17px;
+    }
+    .Offers h1
+    {
+        font-size:55px
+    }
+    .Offers .Border
+    {
+        height:20px;
+        margin-bottom:10%;
+    }
+    .Offers .Image 
+    {
+        min-height:45vh;
+        border-radius:5%;
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20vh;
+    }
+    .Offers .carousel-inner .carousel-item .btn
+    {
+        font-size:17px
+    }
+    .Offers .control .content .carousel-caption
+    {
+        margin:0 -14%;
+        margin-bottom:15%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:2%;
+    }
+    .Review h1
+    {
+        font-size:55px
+    }
+    .Review .Border
+    {
+        height:20px;
+    }
+    .Review .content
+    {
+        margin:0 -15%;
+    }
+    .Review .carousel-inner .carousel-item
+    { 
+        margin-top:13%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -8%;
+        margin-bottom:0%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:30%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:20px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:16px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:30px;    
+    }
+    .Review .carousel-indicators li
+    {
+        margin:2%;
+    }
+    .Team h1
+    {
+        font-size:55px
+    }
+    .Team .Border
+    {
+        height:20px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:30px; 
+    }
+    .Team .content h4
+    { 
+        font-size:20px;
+    }
+    .Team .content p
+    {
+        font-size:14px;
+    }
+    .Team .content:hover a
+    { 
+        font-size:13px;
+        width:18%;
+        max-width:18%;
+    }
+    .Gallery h1
+    {
+        font-size:55px
+    }
+    .Gallery .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form h1
+    {
+        font-size:55px
+    }
+    .Booking-form .Border
+    {
+        height:20px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:25%;
+        margin-right:25%;
+    }
+   
+    .Footer .btn
+    {
+        width:5%;
+        max-width:5%;
+    }
+ }
+
+
+ @media only screen and (min-width : 995px) and (max-width : 1024px) /*--- large tablet and ipad ---*/
+ {
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:25%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:70px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:45px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:20px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:25%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:25%;
+    }
+    .About-Us h1
+    {
+        font-size:65px
+    }
+    .About-Us .Border
+    {
+        height:25px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:45px
+    }
+    .About-Us .content p
+    {
+        font-size:15px
+    }
+    .About-Us .content
+    {
+        text-align: left;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:15px;
+    }
+    .About-Us .carousel-item img
+    {
+        width:40%;
+        margin-left:4%;
+        margin-top:10%;;
+    
+    }
+    .About-Us .carousel
+    {
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:40%;
+        width:100%;
+    }
+    .Services h1
+    {
+        font-size:65px
+    }
+    .Services .Border
+    {
+        height:25px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Services .content
+    {
+        padding:30px;
+        margin:0%;
+      
+    }
+    .Services .content h2
+    {
+        font-size:25px
+    }
+    .Services .content p
+    {
+        font-size:15px
+    }
+    .Services .content img
+    {   
+        max-width:50%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:65px
+    }
+    .Menu .Border
+    {
+        height:25px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Menu .content
+    {
+        padding:20px;
+        margin:2%;
+        margin-bottom:20%
+    }
+    .Menu .content h2
+    {
+        font-size:35px;
+    }
+    .Menu .content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:17px;
+    }
+    .Offers h1
+    {
+        font-size:65px
+    }
+    .Offers .Border
+    {
+        height:25px;
+        margin-bottom:10%;
+    }
+    .Offers .Image 
+    {
+        min-height:45vh;
+        border-radius:5%;
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20vh;
+    }
+    .Offers .carousel-inner .carousel-item .btn
+    {
+        font-size:17px
+    }
+    .Offers .control .content .carousel-caption
+    {
+        margin:0 -14%;
+        margin-bottom:15%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:2%;
+    }
+    .Review h1
+    {
+        font-size:65px
+    }
+    .Review .Border
+    {
+        height:25px;
+    }
+    .Review .content
+    {
+        margin:0 -15%;
+    }
+    .Review .carousel-inner .carousel-item
+    { 
+        margin-top:13%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -8%;
+        margin-bottom:0%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:30%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:20px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:16px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:35px;    
+    }
+    .Review .carousel-indicators li
+    {
+        margin:1%;
+    }
+    .Team h1
+    {
+        font-size:65px
+    }
+    .Team .Border
+    {
+        height:25px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:30px; 
+    }
+    .Team .content h4
+    { 
+        font-size:20px;
+    }
+    .Team .content p
+    {
+        font-size:14px;
+    }
+    .Team .content:hover a
+    { 
+        font-size:13px;
+        width:14%;
+        max-width:14%;
+    }
+    .Gallery h1
+    {
+        font-size:65px
+    }
+    .Gallery .Border
+    {
+        height:25px;
+        margin-bottom:15%;
+    }
+    .Booking-form h1
+    {
+        font-size:65px
+    }
+    .Booking-form .Border
+    {
+        height:25px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:25%;
+        margin-right:25%;
+    }
+   
+    .Footer .btn
+    {
+        width:4%;
+        max-width:4%;
+    }
+ }
+@media only screen and (min-width : 1024px) and (max-width : 1224px) /*--- Tablet landscape and ipad pro --- */
+ {
+    header .navbar-nav
+    {
+        margin-right:10%;
+    }
+    header .navbar-brand
+    {
+        margin-left:5%;
+    }
+    .navbar-brand img
+    {
+        width:90%;
+    }
+    header .navbar-toggler
+    {
+        margin-right:5%;
+    }
+    .carousel a
+    {
+       font-size:23px;
+    }
+    header .carousel-inner .active .carousel-caption
+    {
+        margin-bottom:20%;
+    }
+    header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
+    {
+        font-size:80px;
+        margin-bottom:0%;
+    }
+    header .carousel-caption .active-h2 , header .carousel-caption .second-h1 , header .carousel-caption .third-h1
+    {
+        font-size:50px;
+    }
+    header .carousel-caption .active-btn , header .carousel-caption .second-btn , header .carousel-caption .third-btn
+    {
+        font-size:25px;
+    }
+    header .carousel-inner .second .carousel-caption
+    {
+        margin-left:0%;
+        margin-bottom:20%;
+    } 
+    header .carousel-inner .third .carousel-caption
+    {
+        margin-right:0%;
+        margin-bottom:20%;
+    }
+    .About-Us h1
+    {
+        font-size:65px
+    }
+    .About-Us .Border
+    {
+        height:25px;
+        width: 100%;  
+    }
+    .About-Us .content h2
+    {
+        font-size:45px
+    }
+    .About-Us .content p
+    {
+        font-size:17px
+    }
+    .About-Us .content
+    {
+        text-align: left;
+        margin-top:8%;
+    }
+    .About-Us .content a
+    {
+        font-size:15px;
+    }
+    .About-Us .carousel-item img
+    {
+        width:40%;
+        margin-left:4%;
+        margin-top:10%;;
+    }
+    .About-Us .carousel
+    {
+        border-radius:2%;
+        margin-right:0%;
+        margin-top:30%;
+        width:100%;
+    }
+    .Services h1
+    {
+        font-size:65px
+    }
+    .Services .Border
+    {
+        height:25px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Services .content
+    {
+        padding:30px;
+        margin:0%;
+      
+    }
+    .Services .content h2
+    {
+        font-size:25px
+    }
+    .Services .content p
+    {
+        font-size:15px
+    }
+    .Services .content img
+    {   
+        max-width:50%;
+        border-radius:50%;
+    }
+    .Menu h1
+    {
+        font-size:65px
+    }
+    .Menu .Border
+    {
+        height:25px;
+        width: 100%;  
+        margin-bottom:10%;
+    }
+    .Menu .content
+    {
+        padding:20px;
+        margin:2%;
+        margin-bottom:20%
+    }
+    .Menu .content h2
+    {
+        font-size:35px;
+    }
+    .Menu .content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .last-content2 .p1
+    {
+        font-size:20px;
+        margin:1%
+    }
+    .Menu .last-content2 .p2
+    {
+        font-size:14px;
+        margin:1%
+    }
+    .Menu .content3 .Full-Menu
+    {
+        font-size:17px;
+    }
+    .Offers h1
+    {
+        font-size:65px
+    }
+    .Offers .Border
+    {
+        height:25px;
+        margin-bottom:10%;
+    }
+    .Offers .Image 
+    {
+        min-height:45vh;
+        border-radius:5%;
+    }
+    .Offers .carousel-inner .carousel-item
+    {
+        min-height:20vh;
+    }
+    .Offers .carousel-inner .carousel-item .btn
+    {
+        font-size:17px
+    }
+    .Offers .control .content .carousel-caption
+    {
+        margin:0 -14%;
+        margin-bottom:15%
+    }
+    .Offers .carousel-caption h2
+    {
+        font-size:35px;
+    }
+    .Offers .carousel-caption .Price span
+    {
+        font-size:18px;
+    }
+    .Offers .carousel-caption p
+    {
+        font-size:15px;
+    }
+    .Offers .carousel-indicators li
+    {
+        margin:2%;
+    }
+    .Review h1
+    {
+        font-size:65px
+    }
+    .Review .Border
+    {
+        height:25px;
+    }
+    .Review .content
+    {
+        margin:0 -15%;
+    }
+    .Review .carousel-inner .carousel-item
+    { 
+        margin-top:15%;
+    }
+    .Review .carousel-caption
+    {
+        margin:0 -8%;
+        margin-bottom:0%
+    }
+    .Review .content .carousel-caption img
+    {
+        width:25%;
+    }
+    .Review .carousel-caption h4
+    {
+        font-size:25px;
+    }
+    .Review .carousel-caption .Price span
+    {
+        font-size:20px;
+    }
+    .Review .carousel-caption p
+    {
+        font-size:16px;
+    }
+    .Review .carousel-caption p span
+    {
+        font-size:35px;    
+    }
+    .Review .carousel-indicators li
+    {
+        margin:1%;
+    }
+    .Team h1
+    {
+        font-size:65px
+    }
+    .Team .Border
+    {
+        height:25px;
+        margin-bottom:5%;
+    }
+    .Team .content img
+    {
+        width:75%;
+    }
+    .Team .content h3
+    {
+        font-size:30px; 
+    }
+    .Team .content h4
+    { 
+        font-size:20px;
+    }
+    .Team .content p
+    {
+        font-size:14px;
+    }
+    .Team .content:hover a
+    { 
+        font-size:13px;
+        width:14%;
+        max-width:14%;
+    }
+    .Gallery h1
+    {
+        font-size:65px
+    }
+    .Gallery .Border
+    {
+        height:25px;
+        margin-bottom:15%;
+    }
+    .Booking-form h1
+    {
+        font-size:65px
+    }
+    .Booking-form .Border
+    {
+        height:25px;
+        margin-bottom:15%;
+    }
+    .Booking-form
+    {
+        margin-left:25%;
+        margin-right:25%;
+    }
+   
+    .Footer .btn
+    {
+        width:4%;
+        max-width:4%;
+    }
+ }

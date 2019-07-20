@@ -1248,9 +1248,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:50%;
+        height:480px
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -1268,12 +1268,10 @@ header .carousel-control-prev , .carousel-control-next
     header .carousel-inner .second .carousel-caption
     {
         margin-left:0%;
-        margin-bottom:50%;
     } 
     header .carousel-inner .third .carousel-caption
     {
         margin-right:0%;
-        margin-bottom:50%;
     }
     #About-Us
     {
@@ -1355,7 +1353,8 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Menu .content h2
     {
-        font-size:30px
+        font-size:25px;
+        padding:10px;
     }
     .Menu .content2 .p1
     {
@@ -1550,9 +1549,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:45%;
+       height:470px;
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -1570,12 +1569,10 @@ header .carousel-control-prev , .carousel-control-next
     header .carousel-inner .second .carousel-caption
     {
         margin-left:0%;
-        margin-bottom:45%;
     } 
     header .carousel-inner .third .carousel-caption
     {
-        margin-right:0%;
-        margin-bottom:45%;
+        margin-right:0%; 
     }
     .About-Us h1
     {
@@ -1651,7 +1648,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Menu .content h2
     {
-        font-size:35px;
+        font-size:25px;
     }
     .Menu .content2 .p1
     {
@@ -1851,9 +1848,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:35%;
+      height:480px;
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -1870,13 +1867,11 @@ header .carousel-control-prev , .carousel-control-next
     }
     header .carousel-inner .second .carousel-caption
     {
-        margin-left:0%;
-        margin-bottom:35%;
+        margin-left:0%;  
     } 
     header .carousel-inner .third .carousel-caption
     {
         margin-right:0%;
-        margin-bottom:35%;
     }
     .About-Us h1
     {
@@ -2037,8 +2032,8 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .carousel-inner .carousel-item
     {
-    
-        margin-top:10%;
+        min-height:100px;
+        margin-top:0%;
     }
     .Review .carousel-caption
     {
@@ -2047,7 +2042,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .content .carousel-caption img
     {
-        width:40%;
+        width:25%;
     }
     .Review .carousel-caption h4
     {
@@ -2160,9 +2155,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:35%;
+       height:460px;
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -2180,12 +2175,10 @@ header .carousel-control-prev , .carousel-control-next
     header .carousel-inner .second .carousel-caption
     {
         margin-left:0%;
-        margin-bottom:35%;
     } 
     header .carousel-inner .third .carousel-caption
     {
         margin-right:0%;
-        margin-bottom:35%;
     }
     .About-Us h1
     {
@@ -2346,8 +2339,8 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .carousel-inner .carousel-item
     {
-    
-        margin-top:15%;
+       min-height:120px;
+       margin-top:5%;
     }
     .Review .carousel-caption
     {
@@ -2356,7 +2349,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .content .carousel-caption img
     {
-        width:40%;
+        width:25%;
     }
     .Review .carousel-caption h4
     {
@@ -2468,9 +2461,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:35%;
+        height:470px;
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -2488,12 +2481,10 @@ header .carousel-control-prev , .carousel-control-next
     header .carousel-inner .second .carousel-caption
     {
         margin-left:0%;
-        margin-bottom:35%;
     } 
     header .carousel-inner .third .carousel-caption
     {
         margin-right:0%;
-        margin-bottom:35%;
     }
     .About-Us h1
     {
@@ -2607,8 +2598,7 @@ header .carousel-control-prev , .carousel-control-next
     .Offers .Image 
     {
         min-height:45vh;
-        border-radius:5%;
-       
+        border-radius:5%;     
     }
     .Offers .carousel-inner .carousel-item
     {
@@ -2654,8 +2644,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .carousel-inner .carousel-item
     {
-    
-        margin-top:15%;
+       margin-top:0%;
     }
     .Review .carousel-caption
     {
@@ -2664,7 +2653,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .content .carousel-caption img
     {
-        width:40%;
+        width:20%;
     }
     .Review .carousel-caption h4
     {
@@ -2775,9 +2764,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:25%;
+     height:470px;
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -2795,12 +2784,10 @@ header .carousel-control-prev , .carousel-control-next
     header .carousel-inner .second .carousel-caption
     {
         margin-left:0%;
-        margin-bottom:25%;
     } 
     header .carousel-inner .third .carousel-caption
     {
         margin-right:0%;
-        margin-bottom:25%;
     }
     .About-Us h1
     {
@@ -2973,16 +2960,16 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .carousel-inner .carousel-item
     { 
-        margin-top:13%;
+        margin-top:3%;
     }
     .Review .carousel-caption
     {
         margin:0 -8%;
-        margin-bottom:0%
+        margin-bottom:0%;
     }
     .Review .content .carousel-caption img
     {
-        width:30%;
+        width:15%;
     }
     .Review .carousel-caption h4
     {
@@ -3089,9 +3076,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:25%;
+        height:450px;
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -3109,12 +3096,10 @@ header .carousel-control-prev , .carousel-control-next
     header .carousel-inner .second .carousel-caption
     {
         margin-left:0%;
-        margin-bottom:25%;
     } 
     header .carousel-inner .third .carousel-caption
     {
         margin-right:0%;
-        margin-bottom:25%;
     }
     .About-Us h1
     {
@@ -3285,8 +3270,8 @@ header .carousel-control-prev , .carousel-control-next
         margin:0 -15%;
     }
     .Review .carousel-inner .carousel-item
-    { 
-        margin-top:13%;
+    {
+        margin-top:2%;
     }
     .Review .carousel-caption
     {
@@ -3295,7 +3280,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .content .carousel-caption img
     {
-        width:30%;
+        width:14%;
     }
     .Review .carousel-caption h4
     {
@@ -3400,9 +3385,9 @@ header .carousel-control-prev , .carousel-control-next
     {
        font-size:23px;
     }
-    header .carousel-inner .active .carousel-caption
+    header .carousel-inner .carousel-caption
     {
-        margin-bottom:20%;
+      height:450px;
     }
     header .carousel-caption .active-h1 , header .carousel-caption .second-h2 , header .carousel-caption .third-h2
     {
@@ -3420,12 +3405,10 @@ header .carousel-control-prev , .carousel-control-next
     header .carousel-inner .second .carousel-caption
     {
         margin-left:0%;
-        margin-bottom:20%;
     } 
     header .carousel-inner .third .carousel-caption
     {
         margin-right:0%;
-        margin-bottom:20%;
     }
     .About-Us h1
     {
@@ -3596,7 +3579,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .carousel-inner .carousel-item
     { 
-        margin-top:15%;
+        margin-top:1%;
     }
     .Review .carousel-caption
     {
@@ -3605,7 +3588,7 @@ header .carousel-control-prev , .carousel-control-next
     }
     .Review .content .carousel-caption img
     {
-        width:25%;
+        width:8%;
     }
     .Review .carousel-caption h4
     {

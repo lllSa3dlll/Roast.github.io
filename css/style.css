@@ -326,7 +326,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .About-Us .Border
 {
-    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border.png) no-repeat scroll center center / contain;
     border:none;
     content:"";
     height:22px;
@@ -335,7 +335,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .About-Us .carousel
 {
-    background:white url(../Images/backgrounds/back-4.jpg);
+    background:white url(../Images/Backgrounds/back-4.jpg);
     padding:20px;
     width:100%;
     background-position:center;
@@ -423,7 +423,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .Services .Border
 {
-    background:url(../Images/border/border-2.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border-2.png) no-repeat scroll center center / contain;
     content:"";
     height:22px;
     width: 100%;  
@@ -493,7 +493,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .Menu .Border
 {
-    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border.png) no-repeat scroll center center / contain;
     border:none;
     content:"";
     height:22px;
@@ -669,7 +669,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .Offers .Border
 {
-    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border.png) no-repeat scroll center center / contain;
     border:none;
     content:"";
     height:22px;
@@ -680,7 +680,7 @@ header .carousel-control-prev , .carousel-control-next
 {
     border-radius:30px;
     box-sizing: border-box;
-    background:url(../Images/backgrounds/back-6.jpg) no-repeat top center;
+    background:url(../Images/Backgrounds/back-6.jpg) no-repeat top center;
     background-size: cover;
     height:100%;
 }
@@ -763,7 +763,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .Review .Border
 {
-    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border.png) no-repeat scroll center center / contain;
     border:none;
     content:"";
     height:22px;
@@ -846,7 +846,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .Team .Border
 {
-    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border.png) no-repeat scroll center center / contain;
     border:none;
     content:"";
     height:22px;
@@ -970,7 +970,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .Gallery .Border
 {
-    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border.png) no-repeat scroll center center / contain;
     border:none;
     content:"";
     height:22px;
@@ -1106,7 +1106,7 @@ header .carousel-control-prev , .carousel-control-next
 }
 .Booking-form .Border
 {
-    background:url(../Images/border/border.png) no-repeat scroll center center / contain;
+    background:url(../Images/Border/border.png) no-repeat scroll center center / contain;
     border:none;
     content:"";
     height:22px;

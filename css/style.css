@@ -153,7 +153,7 @@ header .carousel-inner .active
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height:100vh;
+    height:880px;
 }
 header .carousel-inner .second
 {
@@ -162,7 +162,7 @@ header .carousel-inner .second
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height:100vh
+    height:880px;
 }
 header .carousel-inner .third
 {
@@ -171,7 +171,7 @@ header .carousel-inner .third
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height:100vh
+    height:880px;
 }
 header .carousel-inner .active .carousel-caption
 {
